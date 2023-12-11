@@ -41,6 +41,6 @@ After cloning the boilerplate to the new Dapp, the frontend is deployed and host
 
 This project is licensed under the MIT license.
 
-## Créditos
+## Credits
 
 Developed by Pollum Team 2023.
