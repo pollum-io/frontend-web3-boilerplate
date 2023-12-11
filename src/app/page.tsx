@@ -14,10 +14,10 @@ export default function HomePage() {
   const { address } = useAccount();
   const { chain } = useNetwork();
   const { switchNetwork } = useSwitchNetwork();
-  const desiredChainId = 1440002;
+  const desiredChainId = 1;
 
   useEffect(() => {
-    if (chain?.id !== desiredChainId && switchNetwork) {
+    if (chain?.id && chain?.id !== desiredChainId && switchNetwork) {
       switchNetwork(desiredChainId);
     }
   }, [chain, desiredChainId]);
@@ -26,8 +26,8 @@ export default function HomePage() {
     <main>
       <section>
         <div className="layout relative flex min-h-screen flex-col items-center justify-start gap-20 text-center">
-          {address ? address : <InfoHeaderSkeleton />}
-          <div className="text-3xl">Please connect your wallet</div>
+          {address ? <div>{address}</div> : <InfoHeaderSkeleton />}
+          {!address && <div className="text-3xl">Please connect your wallet</div>}
         </div>
       </section>
     </main>

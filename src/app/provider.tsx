@@ -1,4 +1,3 @@
-"use client";
 
 import { ThemeProvider } from "next-themes";
 import { WagmiConfig, useConfig } from "wagmi";

@@ -1,4 +1,4 @@
-import { createConfig, configureChains } from "wagmi"
+import { createConfig, configureChains, mainnet } from "wagmi"
 
 import { publicProvider } from "wagmi/providers/public"
 
@@ -48,7 +48,7 @@ const xrp = {
 } // TODO
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [xrp],
+  [mainnet],
   [publicProvider()],
 )
 

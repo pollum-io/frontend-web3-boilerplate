@@ -1,7 +1,7 @@
 export const siteConfig = {
-  title: 'Lyra Loans',
+  title: 'Boilerplate Web3',
   description:
-    'Lyra Loans é um protocolo de empréstimos descentralizado desenvolvido para o HACKATHON: Web3 – Tokenização do Tesouro Nacional.',
+    'Boilerplate to implements Dapps',
 };
 
 export const metadata = {

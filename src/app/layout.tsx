@@ -11,7 +11,6 @@ import { Header } from "@/components/Header";
 
 import { Providers } from "./provider";
 import { ConnectWallet } from "@/components/ConnectWallet";
-import { LendingManage } from "@/components/LendingManage";
 import ToastNotification from "@/components/Toast";
 import { useToastStore } from "@/stores/toast";
 import { metadata } from "@/constant/config";
@@ -60,7 +59,6 @@ export default function RootLayout({
             <Header />
             <main className="mt-[105px] flex-grow">{children}</main>
             <ConnectWallet />
-            <LendingManage />
             {toast.type && (
               <ToastNotification
                 message={toast.message || ""}
